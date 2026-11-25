@@ -1,10 +1,10 @@
 {
   "name": "share-with-carno",
   "displayName": "Share with Carno",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Share the apps you make with Claude Code. Run /share-with-carno:share (or just ask Claude to share your app) to put it online and get one link your friends can open. No account needed.",
   "author": {
-    "name": "Carno",
+    "name": "Carno App Hosting",
     "email": "support@carno.ai",
     "url": "https://www.carno.ai"
   },
