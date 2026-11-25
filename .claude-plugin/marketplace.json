@@ -1,0 +1,20 @@
+{
+  "name": "carno",
+  "owner": {
+    "name": "Carno",
+    "email": "support@carno.ai",
+    "url": "https://www.carno.ai"
+  },
+  "metadata": {
+    "description": "Carno: share the apps you make with AI."
+  },
+  "plugins": [
+    {
+      "name": "carno",
+      "source": "./",
+      "description": "Share the apps you make with Claude Code: put the app online and get one link your friends can open. No account needed.",
+      "category": "deployment",
+      "homepage": "https://www.carno.ai"
+    }
+  ]
+}
