@@ -1,9 +1,6 @@
 ---
 name: share
-description: Put the app in this project online with Carno and give the person one link their friends can open. Use when someone asks to share an app, put it online, publish it, deploy it, host it, or "send a link" to it so other people can try it.
-when_to_use: 'Trigger phrases: "share this with my friends", "how do I share this app", "give me a link", "put this online", "let my team try it", "host this", "deploy this so others can use it".'
-argument-hint: "[folder]"
-allowed-tools: Bash(npx -y carno-ai@0.1.0 *)
+description: 'Put the app in this project online with Carno and give the person one link their friends can open. Use when someone asks to share an app, put it online, publish it, deploy it, host it, or "send a link" to it so other people can try it, for example "share this with my friends", "how do I share this app", "give me a link", "put this online", "let my team try it".'
 ---
 
 # Share this app with Carno
