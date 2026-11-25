@@ -1,8 +1,8 @@
 {
-  "name": "carno-ai",
-  "displayName": "Carno",
-  "version": "1.1.0",
-  "description": "Share the apps you make with Claude Code. Run /carno-ai:share (or just ask Claude to share your app) to put it online and get one link your friends can open. No account needed.",
+  "name": "share-with-carno",
+  "displayName": "Share with Carno",
+  "version": "1.2.0",
+  "description": "Share the apps you make with Claude Code. Run /share-with-carno:share (or just ask Claude to share your app) to put it online and get one link your friends can open. No account needed.",
   "author": {
     "name": "Carno",
     "email": "support@carno.ai",
@@ -11,7 +11,16 @@
   "homepage": "https://www.carno.ai",
   "repository": "https://github.com/carno-dev/carno-plugin",
   "license": "MIT",
-  "keywords": ["share", "deploy", "hosting", "publish", "link", "web-app", "vibe-coding", "mcp"],
+  "keywords": [
+    "share",
+    "deploy",
+    "hosting",
+    "publish",
+    "link",
+    "web-app",
+    "vibe-coding",
+    "mcp"
+  ],
   "icon": "./assets/icon.png",
   "documentationUrl": "https://www.carno.ai/help/connect",
   "supportUrl": "https://www.carno.ai/support",

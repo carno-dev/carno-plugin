@@ -7,7 +7,7 @@
   },
   "plugins": [
     {
-      "name": "carno-ai",
+      "name": "share-with-carno",
       "source": "./",
       "description": "Share the apps you make with Claude Code: put the app online and get one link your friends can open. No account needed."
     }

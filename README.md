@@ -1,7 +1,7 @@
-# Carno for Claude Code
+# Share with Carno (for Claude Code)
 
 **Share the apps you make with Claude Code.** You made something and want your friends to be
-able to open it. Type `/carno-ai:share` (or just ask Claude to "share this with my friends") and
+able to open it. Type `/share-with-carno:share` (or just ask Claude to "share this with my friends") and
 you get a link that anyone can open on a phone or computer.
 
 - No account, no API key, no setup
@@ -13,13 +13,13 @@ you get a link that anyone can open on a phone or computer.
 In your terminal:
 
 ```bash
-claude plugin install carno-ai --marketplace carno-dev/carno-plugin
+claude plugin install share-with-carno --marketplace carno-dev/carno-plugin
 ```
 
 Or, inside a Claude Code session:
 
 ```
-/plugin install carno-ai --marketplace carno-dev/carno-plugin
+/plugin install share-with-carno --marketplace carno-dev/carno-plugin
 ```
 
 ## Use
@@ -27,7 +27,7 @@ Or, inside a Claude Code session:
 In any project:
 
 ```
-/carno-ai:share
+/share-with-carno:share
 ```
 
 Claude puts the app online with [Carno](https://www.carno.ai) and replies with:
@@ -44,7 +44,7 @@ You don't have to type the command. "Share this with my friends", "give me a lin
 
 | Part | What it does |
 |---|---|
-| `skills/share` | The `/carno-ai:share` skill: picks the folder, runs [`npx carno-ai`](https://www.npmjs.com/package/carno-ai), and explains the result |
+| `skills/share` | The `/share-with-carno:share` skill: picks the folder, runs [`npx carno-ai`](https://www.npmjs.com/package/carno-ai), and explains the result |
 | `.mcp.json` | Connects Carno's MCP server (`https://mcp.carno.ai/mcp`). Once you sign in through `/mcp`, Claude can list your apps, show logs, roll back and share with specific people |
 
 ## What it runs and sends
