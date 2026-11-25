@@ -63,9 +63,15 @@ the app once and sign in (`npx -y carno-ai@latest login`). From then on, step 3b
 npx -y carno-ai@latest --json push "<folder>" --note "<one plain sentence about what changed>"
 ```
 
-- `live_url`: the app is live at that link. Give it to them.
-- `preview_url` only: the new version is ready to check at that link. They make it live from
-  the app's page in Carno.
+- `live_url` (`https://<slug>.apps.carno.ai/`): the app is live at that link, and future pushes
+  update the same link. **Apps on an account are private at first: only the owner can open the
+  link until they share it.** Ask who should open it, then share it:
+  - If Carno's MCP tools are connected, use `share_app` on that app. Use `general_access`
+    `{ "level": "link" }` for "anyone with the link", or `add` with emails and role `use` for
+    specific people. Confirm before sharing outside their organization.
+  - Otherwise send them to `https://www.carno.ai/a/<slug>` and tell them to click **Share**,
+    where they can pick "anyone with the link" or add people by email.
+  If they say they already shared it, just give the link.
 - `state` `needs_choice`: the folder holds several projects. Ask which one and push that folder.
 - `blocked` with `reason` `bloated_upload`: the folder is mostly data or build files. Show the
   message and ask before adding `--force`.
@@ -76,7 +82,8 @@ npx -y carno-ai@latest --json push "<folder>" --note "<one plain sentence about 
 ## Afterwards
 
 Keep the reply short: the link, the access code if there is one, the claim link and the 7-day
-note for no-account apps, and one line on how to update it. Don't describe Carno's pricing
+note for no-account apps, who can open it, and one line on how to update it. Never say friends can
+open a link before it's shared with them. Don't describe Carno's pricing
 unless they ask. For a lasting setup inside Claude Code, the plugin also connects Carno's MCP
 server, which can list their apps, show logs, roll back and share with specific people once
 they sign in through `/mcp`.
