@@ -1,7 +1,7 @@
 {
   "name": "carno",
   "displayName": "Carno",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Share the apps you make with Claude Code. Run /carno:share (or just ask Claude to share your app) to put it online and get one link your friends can open. No account needed.",
   "author": {
     "name": "Carno",

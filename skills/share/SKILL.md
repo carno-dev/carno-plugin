@@ -3,7 +3,7 @@ name: share
 description: Put the app in this project online with Carno and give the person one link their friends can open. Use when someone asks to share an app, put it online, publish it, deploy it, host it, or "send a link" to it so other people can try it.
 when_to_use: 'Trigger phrases: "share this with my friends", "how do I share this app", "give me a link", "put this online", "let my team try it", "host this", "deploy this so others can use it".'
 argument-hint: "[folder]"
-allowed-tools: Bash(npx -y carno-ai@latest *)
+allowed-tools: Bash(npx -y carno-ai@0.1.0 *)
 ---
 
 # Share this app with Carno
@@ -26,7 +26,7 @@ and it honours `.gitignore` and `.carnoignore`. Don't paste or print secrets.
 ## 2. Check whether they're signed in to Carno
 
 ```bash
-npx -y carno-ai@latest --json whoami
+npx -y carno-ai@0.1.0 --json whoami
 ```
 
 - `"signed_in": true`: go to step 3b. The app becomes theirs and keeps one link across updates.
@@ -37,7 +37,7 @@ npx -y carno-ai@latest --json whoami
 Run this from the project, passing the folder:
 
 ```bash
-npx -y carno-ai@latest --json deploy "<folder>"
+npx -y carno-ai@0.1.0 --json deploy "<folder>"
 ```
 
 It prints one JSON document. Act on `status`:
@@ -55,12 +55,12 @@ The exit code means the same thing: `0` live, `2` couldn't start or needs a key,
 say what failed in one sentence.
 
 Each no-account deploy makes a **new** link. To update the same link after changes, they claim
-the app once and sign in (`npx -y carno-ai@latest login`). From then on, step 3b updates it in place.
+the app once and sign in (`npx -y carno-ai@0.1.0 login`). From then on, step 3b updates it in place.
 
 ## 3b. Signed in
 
 ```bash
-npx -y carno-ai@latest --json push "<folder>" --note "<one plain sentence about what changed>"
+npx -y carno-ai@0.1.0 --json push "<folder>" --note "<one plain sentence about what changed>"
 ```
 
 - `live_url` (`https://<slug>.apps.carno.ai/`): the app is live at that link, and future pushes
